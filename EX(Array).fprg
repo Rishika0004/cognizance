@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="rishika"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-11-23 04:06:08 PM"/>
+        <attribute name="created" value="cmlzaGlrYTtMQVBUT1AtNEJVS0tIRkQ7MjAyMS0xMS0yMzswMzozMDoyMyBQTTszMDg2"/>
+        <attribute name="edited" value="cmlzaGlrYTtMQVBUT1AtNEJVS0tIRkQ7MjAyMS0xMS0yMzswNDowNjowOCBQTTsxOzMyMDE="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="ssize" type="Integer" array="False" size=""/>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <output expression="&quot;TOTAL NUMBERS OF ELEMENTS&quot;" newline="True"/>
+            <input variable="ssize"/>
+            <declare name="arr1" type="Integer" array="True" size="ssize"/>
+            <declare name="arr2" type="Integer" array="True" size="ssize"/>
+            <output expression="&quot;enter the elements&quot;" newline="True"/>
+            <for variable="i" start="0" end="ssize-1" direction="inc" step="1">
+                <output expression="&quot;Enter element number&quot; &amp; i+1" newline="True"/>
+                <input variable="arr1[i]"/>
+            </for>
+            <for variable="i" start="0" end="ssize-1" direction="inc" step="1">
+                <assign variable="arr2[i]" expression="arr1[i]"/>
+            </for>
+            <for variable="i" start="0" end="ssize-1" direction="inc" step="1">
+                <output expression="arr2[i]" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

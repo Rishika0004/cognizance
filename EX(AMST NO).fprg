@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="rishika"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-11-09 04:47:24 PM"/>
+        <attribute name="created" value="cmlzaGlrYTtMQVBUT1AtNEJVS0tIRkQ7MjAyMS0xMS0wOTswNDo0MToxOSBQTTszMDk4"/>
+        <attribute name="edited" value="cmlzaGlrYTtMQVBUT1AtNEJVS0tIRkQ7MjAyMS0xMS0wOTswNDo0NzoyNCBQTTsxOzMyMDg="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="NUM" type="Integer" array="False" size=""/>
+            <input variable="NUM"/>
+            <declare name="N" type="Integer" array="False" size=""/>
+            <assign variable="N" expression="NUM"/>
+            <declare name="SUM" type="Integer" array="False" size=""/>
+            <assign variable="SUM" expression="0"/>
+            <declare name="DIGIT" type="Integer" array="False" size=""/>
+            <while expression="NUM&gt;0">
+                <assign variable="DIGIT" expression="NUM%10"/>
+                <assign variable="NUM" expression="NUM/10"/>
+                <assign variable="SUM" expression="SUM+(DIGIT*DIGIT*DIGIT)"/>
+            </while>
+            <if expression="N==SUM">
+                <then>
+                    <output expression="&quot;AMSTRONG NUMBER&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;NOT AN AMSTRONG NUMBER&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
