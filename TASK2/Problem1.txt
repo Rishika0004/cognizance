@@ -1,0 +1,26 @@
+This program will allow the user to check if the number is divisible by 3 or not
+
+START
+
+int main function
+	DECLARE N,sum,k
+
+	print "ENTER THE NUMBER"
+
+	READ the number N
+
+	SET sum=0
+
+	WHILE N>=1
+		SET k= N%10
+		SET sum = sum + k
+		SET N = N/10
+	END WHILE
+	
+	IF sum%3 = 0
+		print "true"
+	ELSE
+		print "false"
+	END IF
+
+END
